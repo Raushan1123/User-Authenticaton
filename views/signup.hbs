@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+</head>
+<body>
+    <h1>Sign Up!</h1>
+    <form method="POST" action="/register">
+        <input type="text" name="name" placeholder="name"> <br><br>
+        <input type="text" name="email" placeholder="email"><br><br>
+        <input type="password" name="password" placeholder="password"><br><br>
+        <input type="text" name="movie" placeholder="Movie Name"><br><br>
+        <button type="submit">Submit!</button>
+    </form>
+    {{#if currentUser}}
+        <h1>Current User is logged IN</h1>
+    {{/if}}
+</body>
+</html>
